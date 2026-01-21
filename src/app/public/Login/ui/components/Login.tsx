@@ -6,13 +6,13 @@ import { Label } from '@/components/ui/label'
 
 function Login() {
   return (
-    <div className="min-h-screen bg-muted/30 px-4 py-10">
+    <div className="flex min-h-screen items-center justify-center bg-muted/30 px-4">
       <div className="mx-auto grid w-full max-w-3xl overflow-hidden rounded-lg border bg-background shadow-sm md:grid-cols-2">
         <div className="space-y-6 p-6 md:p-8">
           <div className="space-y-1">
-            <h1 className="text-2xl font-semibold">Welcome back</h1>
+            <h1 className="text-2xl font-semibold">Bienvenido</h1>
             <p className="text-sm text-muted-foreground">
-              Sign in to continue
+              Inicia sesión para continuar
             </p>
           </div>
           <form className="grid gap-4">
@@ -21,16 +21,16 @@ function Login() {
               <Input
                 id="email"
                 type="email"
-                placeholder="you@example.com"
+                placeholder="tucorreo@ejemplo.com"
                 required
               />
             </div>
             <div className="grid gap-2">
-              <Label htmlFor="password">Password</Label>
+              <Label htmlFor="password">Contraseña</Label>
               <Input
                 id="password"
                 type="password"
-                placeholder="Your password"
+                placeholder="Ejemplo325."
                 required
               />
             </div>
@@ -38,21 +38,21 @@ function Login() {
               <div className="flex items-center gap-2">
                 <Checkbox id="remember" />
                 <Label htmlFor="remember" className="text-sm font-normal">
-                  Remember me
+                  Recordar
                 </Label>
               </div>
               <a className="text-sm text-primary hover:underline" href="#">
-                Forgot password?
+                ¿Recuperar contraseña?
               </a>
             </div>
             <Button type="submit" className="w-full">
-              Sign in
+              Ingresar
             </Button>
           </form>
           <p className="text-center text-sm text-muted-foreground">
-            Don&apos;t have an account?{' '}
+            ¿No tienes un usuario?{' '}
             <a className="text-primary hover:underline" href="#">
-              Register
+              Registrar
             </a>
           </p>
         </div>
